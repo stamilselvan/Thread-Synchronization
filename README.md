@@ -1,5 +1,5 @@
 # Thread-Synchronization
-`wait_for_all_threads()` synchronizes pthread to begin simultaneously in a multi-threaded environment, free from race condition(as far as I have tested). `set_core_affinity()` attaches a thread to a defined CPU.
+`wait_for_all_threads()` synchronizes pthreads to begin simultaneously in a multi-threaded environment, free from race condition(as far as I have tested). `set_core_affinity()` attaches a thread to a defined CPU.
 
 ###Sample Output
 Console output of the ARM Cortex A9 quad core processor is given below.
