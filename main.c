@@ -57,7 +57,8 @@ int set_core_affinity(int core_id)
 	CPU_SET(core_id, &cpuset);
 
 	pthread_t current_thread = pthread_self();
-	if(pthread_setaffinity_np(current_thread, sizeof(cpu_set_t), &cpuset) != 0) return CPU_AFFINITY_ERROR;
+	if(pthread_setaffinity_np(current_thread, sizeof(cpu_set_t), &cpuset) != 0) 
+		return CPU_AFFINITY_ERROR;
 
 	return CPU_AFFINITY_OK;
 }
